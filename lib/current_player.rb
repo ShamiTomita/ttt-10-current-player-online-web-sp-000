@@ -3,7 +3,8 @@ def turn_count(board)
   spaces = 0
   board.each do |space|
   spaces += 1
-  if space == "X" || space == "O" 
+  if space == "X" || space == "O" && spaces < 9
+    turns += 1
   end
   return turns 
 end 
